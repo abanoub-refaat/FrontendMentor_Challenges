@@ -1,0 +1,107 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+.container .product-text {
+    background-color: white;
+    width: 35%;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.container .product {
+    width: 35%;
+}
+.container .product-text p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+.container .product-text h2 {
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;   
+
+}
+.container .product img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.container .product-text .one {
+    margin: 15px 0;
+}
+.container .product-text .two {
+    margin: 15px 0;
+}
+.container .product-text .ditales .money {
+    display: inline-block;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;   
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+.container .product-text .ditales .money-offer {
+    display: inline;
+    text-decoration: line-through;
+}
+.container .product-text object {
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 25%;
+}
+.container .product-text a {
+    display: block;
+    border-radius: 12px;
+    text-align: center;
+    background-color: hsl(157.5, 36.4%, 17.3%);
+    padding: 15px;
+    margin: 15px 0;
+    text-decoration: none;
+    color: white;
+}
+@media (max-width:800px){
+    .container {
+        width: 300px;
+        height: 400px;
+        flex-wrap: wrap;
+    }
+    .container .product {
+        width: 100%;
+        height: 40%;
+    }
+    .container .product-text {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 20px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+    .container .product img {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
+    }
+} 
