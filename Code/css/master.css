@@ -79,6 +79,9 @@ body {
     text-decoration: none;
     color: white;
 }
+.container .product-text a:hover {
+    background-color: #262626;
+}
 @media (max-width:800px){
     .container {
         width: 300px;
