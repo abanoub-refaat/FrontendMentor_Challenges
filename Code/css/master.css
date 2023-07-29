@@ -47,10 +47,10 @@ body {
     border-bottom-left-radius: 12px;
 }
 .container .product-text .one {
-    margin: 15px 0;
+    margin: 20px 0;
 }
 .container .product-text .two {
-    margin: 15px 0;
+    margin: 20px 0;
 }
 .container .product-text .ditales .money {
     display: inline-block;
@@ -76,9 +76,8 @@ body {
     color: white;
     background-color:hsl(158, 36%, 37%);
     padding: 15px;
-    margin: 15px 0;
+    margin: 20px 0;
     text-decoration: none;
-    color: white;
 }
 .container .product-text a:hover {
     background-color: #1c3c30;
