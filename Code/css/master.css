@@ -73,7 +73,8 @@ body {
     display: block;
     border-radius: 12px;
     text-align: center;
-    color: hsl(158, 36%, 37%);
+    color: white;
+    background-color:hsl(158, 36%, 37%);
     padding: 15px;
     margin: 15px 0;
     text-decoration: none;
