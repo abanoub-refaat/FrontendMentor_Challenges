@@ -20,13 +20,14 @@ body {
     transform: translate(-50%, -50%);
     flex-direction: row-reverse;
     flex-flow: row;
-    text-align: center;
     background-color: hsl(244, 38%, 16%);
     border-radius: 8px;
 }
 @media (max-width: 767px){
     .container{
         flex-direction: column-reverse;
+        text-align: center;
+
     }
 }
 .container .image {
