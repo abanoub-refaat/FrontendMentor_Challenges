@@ -15,7 +15,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
-@media (max-width:375px) {
+@media (max-width:768px) {
     body {
         background-image: url(../image/bg-mobile.svg);
         background-size: cover;
@@ -35,7 +35,7 @@ body {
 .main .content-img img {
     max-width: 610px;
 }
-@media (max-width:375px) {
+@media (max-width:768px) {
     .main .logo {
         margin: 20px auto 40px 20px;
     }
@@ -73,7 +73,7 @@ body {
     background-color: hsl(300, 69%, 71%);
     color: white;
 }
-@media (max-width:375px) {
+@media (max-width:768px) {
     .main-text {
         margin: 0 30px 30px;
         text-align: center;
@@ -86,7 +86,7 @@ body {
     transform: translate(180%, 80%);
     width: fit-content;
 }
-@media (max-width: 375px) {
+@media (max-width: 768px) {
     .main-text .icons {
         width: auto;
         transform: none;
