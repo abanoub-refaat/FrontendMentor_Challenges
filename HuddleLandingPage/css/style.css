@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color:  hsl(257, 40%, 49%);
+    background-image: url(../image/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+@media (max-width:375px) {
+    body {
+        background-image: url(../image/bg-mobile.svg);
+        background-size: cover;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
+.main .logo {
+    margin: 30px auto 40px 60px;
+}
+.main .logo img {
+    max-width: 120px;
+}
+.main .content-img {
+    margin-left: 60px;
+}
+.main .content-img img {
+    max-width: 600px;
+}
+@media (max-width:375px) {
+    .main .logo {
+        margin: 20px auto 40px 20px;
+    }
+    .main .content-img {
+        margin-left: 20px;
+    }
+    .main .content-img img {
+        max-width:300px;
+    }
+}
+.main-text {
+    margin-top: 150px;
+    max-width: 430px;
+    line-height: 1.5;
+    margin-left: 30px;
+}
+.main-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.main-text button {
+    background-color: white;
+    padding: 12px 40px;
+    color: hsl(257, 40%, 49%);
+    border-radius: 25px;
+    border-style: none;
+    transition: .2s;
+    cursor:pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.main-text button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+@media (max-width:375px) {
+    .main-text {
+        margin: 0 30px 30px;
+        text-align: center;
+    }
+    .main-text h1 {
+        font-weight: 400;
+    }
+}
+.main-text .icons {
+    transform: translate(180%, 80%);
+    width: fit-content;
+}
+@media (max-width: 375px) {
+    .main-text .icons {
+        width: auto;
+        transform: none;
+        margin-top: 20px;
+        justify-content: center;
+    }
+}
+.main-text .icons svg {
+    display: inline-block;
+    fill: white;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.main-text .icons svg:hover {
+    border-color: hsl(300, 69%, 71%);
+    fill: hsl(300, 69%, 71%);
+}
