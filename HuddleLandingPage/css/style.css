@@ -5,6 +5,8 @@
 }
 body {
     display: grid;
+    min-height: 100vh;
+    place-items: center;
     grid-template-columns: repeat(2, 1fr);
     background-color:  hsl(257, 40%, 49%);
     background-image: url(../image/bg-desktop.svg);
@@ -21,16 +23,17 @@ body {
     }
 }
 .main .logo {
-    margin: 30px auto 40px 60px;
+    margin: 5px auto 40px 100px;
 }
 .main .logo img {
-    max-width: 120px;
+    max-width: 200px;
+    margin-bottom: 50px;
 }
 .main .content-img {
     margin-left: 60px;
 }
 .main .content-img img {
-    max-width: 600px;
+    max-width: 610px;
 }
 @media (max-width:375px) {
     .main .logo {
@@ -38,6 +41,9 @@ body {
     }
     .main .content-img {
         margin-left: 20px;
+    }
+    .main .logo img {
+        max-width: 100px;
     }
     .main .content-img img {
         max-width:300px;
@@ -85,7 +91,6 @@ body {
         width: auto;
         transform: none;
         margin-top: 20px;
-        justify-content: center;
     }
 }
 .main-text .icons svg {
