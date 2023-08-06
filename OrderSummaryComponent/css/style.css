@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(../img/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+@media (max-width: 768px){
+    body {
+        background-image: url(../img/pattern-background-mobile.svg);
+        background-size: cover;
+    }
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+    max-width: 450px;
+    text-align: center;
+    padding-bottom: 12px;
+}
+@media (max-width:768px){
+    .container {
+        max-width: 368px;
+    }
+    .container img {
+        max-width: 368px;
+    }
+}
+.container .data {
+    max-width: 400px;
+}
+.container img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.container .data .Summary {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+h1 {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 30px;
+}
+.container .data .Summary p {
+    color: hsl(224, 23%, 55%);
+}
+
+.container .data .plan {
+    display: flex;
+    gap: 15px;
+    margin: 20px;
+    border-radius: 8px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: hsl(225, 100%, 98%);
+}
+.container .data .plan .main {
+    display: flex;
+    gap: 10px;
+}
+.container .data .plan .main .plan-text h2 {
+    font-weight: 700;
+    font-size: 20px;
+    color:  hsl(223, 47%, 23%);
+}
+.container .data .plan .main .plan-text p {
+    color: hsl(224, 23%, 55%);
+}
+.container .process {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+a {
+    color: hsl(245, 75%, 52%);
+}
+a:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.736);
+}
+.container .process .first {
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    padding: 12px 90px;
+    border-radius: 12px;
+    margin: 10px;
+    border: none;
+    font-weight: 500;
+    box-shadow: 0 10px 20px 0 hsla(245, 75%, 52%, 0.421);
+    cursor: pointer;
+}
+.container .process .first:hover {
+    background-color: hsla(245, 75%, 52%, 0.736);
+}
+.container .process .last {
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    margin: 15px;
+    cursor: pointer;
+}
+.container .process .last:hover {
+    color: hsl(223, 47%, 23%);
+}
