@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: white;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width:768px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    padding: 0 10px;
+    margin: 5px 15px;
+    color: hsl(0, 0%, 95%);
+}
+p {
+    padding: 10px;
+    margin: 10px 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+img {
+    padding: 16px;
+}
+.container .sednas {
+    max-width: 19em;
+    background-color: hsl(31, 77%, 52%);
+    padding: 15px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+@media (max-width:768px){
+    .container .sednas {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+    }
+}
+.container .suvs {
+    max-width: 19em;
+    background-color: hsl(184, 100%, 22%);
+    padding: 15px;
+}
+.container .luxury {
+    max-width: 19em;
+    background-color: hsl(179, 100%, 13%);
+    padding: 15px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+@media (max-width:768px){
+    .container .luxury {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
+.container .sednas button {
+    padding:  12px 20px;
+    margin: 30px 15px;
+    border: 1px solid transparent;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    color: hsl(31, 77%, 52%);
+    cursor: pointer;
+    transition: .2s;
+}
+.container .suvs button {
+    padding:  12px 20px;
+    margin: 30px 15px;
+    border: 1px solid transparent;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    color: hsl(184, 100%, 22%);
+    cursor: pointer;
+    transition: .2s;
+}
+.container .luxury button {
+    padding:  12px 20px;
+    margin: 30px 15px;
+    border: 1px solid transparent;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 25px;
+    color: hsl(179, 100%, 13%);
+    cursor: pointer;
+    transition: .2s;
+}
+.container button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
