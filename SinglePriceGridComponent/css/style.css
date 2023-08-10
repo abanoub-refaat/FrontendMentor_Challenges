@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    list-style-type: none;
+}
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(204, 43%, 93%)
+}
+.container {
+    display: grid;
+    max-width: 650px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.14);
+}
+@media (max-width: 768px){
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 368px;
+    }
+}
+.container .main {
+    background-color: white;
+    padding: 30px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.container .main > h1 {
+    color: hsl(179, 62%, 43%);
+}
+.container .main > h2 {
+    color: hsl(71, 73%, 54%);
+}
+.container .main p {
+    color: hsl(218, 22%, 67%)    ;
+}
+.container .main-two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color:  hsl(204, 43%, 93%);
+}
+@media (max-width: 768px){
+    .container .main-two {
+        grid-template-columns: 1fr;
+    }
+}
+.container .main-two .price {
+    background-color:  #2bb3b1;
+    padding: 30px;
+    border-bottom-left-radius: 8px;
+}
+@media (max-width: 768px){
+    .container .main-two .price {
+        border-bottom-left-radius: 0;
+    }
+}
+.container .main-two .price > h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.container .main-two .price p:first-of-type {
+    color: white;
+    margin: 5px 0;
+}
+.container .main-two .price .n-price {
+    display: flex;
+    justify-items: center;
+    margin: 0;
+}
+.container .main-two .price .n-price p {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin: 5px 0;
+}
+.container .main-two .price .n-price #caccsent {
+    color:  hsl(204, 43%, 93%);
+}
+.container .main-two .why-us {
+    background-color:  #4abebd;
+    padding: 30px;
+    border-bottom-right-radius: 8px;
+}
+@media (max-width: 768px){
+    .container .main-two .why-us {
+        border-bottom-left-radius: 8px;
+    }
+}
+.container .main-two .why-us > h2 {
+    color: white;
+    font-size: 20px;
+}
+.container .main-two .price button {
+    border: none;
+    border-radius: 6px;
+    padding: 15px 80px;
+    margin: 20px auto 10px;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.257) ;
+    cursor: pointer;
+}
