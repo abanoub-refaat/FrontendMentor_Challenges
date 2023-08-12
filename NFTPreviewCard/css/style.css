@@ -1,0 +1,111 @@
+:root {
+    --space: 20px;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+}
+body {
+    background-color:  hsl(217, 54%, 11%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 12px;
+    box-shadow: 0px 1px 35px 10px rgba(0, 0, 0, 0.365);
+}
+a {
+    text-decoration: none;
+    color: white;
+    transform: .2s;
+}
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+.container .img {
+    position: relative;
+    padding: var(--space);
+}
+.container .img  img{
+    max-width: 300px;
+    border-radius: 12px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+.container .img:hover img {
+    filter: brightness(2);
+    opacity: 50%;
+}
+.container .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .2s ease-in-out;
+}
+.container .img:hover .overlay {
+    opacity: 1;
+}
+.container .text h1 {
+    font-weight: 700;
+    font-size: 25px;
+    padding: 5px var(--space) 0;
+    color: white;
+    margin: -0.33em 0;
+}
+.container .text p {
+    color: hsl(215, 51%, 70%);
+    padding: var(--space);
+    max-width: 300px;
+    line-height: 1.6;
+    margin-top: 2px;
+}
+hr {
+    margin: 5px var(--space);
+    width: 300px;
+}
+.container .text .main-icons {
+    display: flex;
+    align-items: center;
+    padding: 0 var(--space) 10px;
+    justify-content: space-between;
+}
+.container .text .main-icons p {
+    padding: 0;
+    margin: 5px;
+}
+.main-icons .icons,
+.main-icons .icons-two {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+.main-icons .icons p {
+    color: hsl(178, 100%, 50%);
+}
+.main-icons .icons-two {
+    color: hsl(215, 51%, 70%);
+}
+.contributions {
+    padding: 15px var(--space) var(--space);
+    display: flex;
+    align-items: center;
+}
+.contributions img {
+    margin-right: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+    max-width: 30px;
+}
+.contributions p {
+    color: hsl(215, 51%, 70%);
+    text-align: center;
+}
