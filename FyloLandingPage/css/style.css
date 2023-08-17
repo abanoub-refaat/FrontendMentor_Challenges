@@ -11,7 +11,7 @@ body {
 }
 @media (max-width: 768px) {
     .container {
-        max-width: 368px;
+        max-width: 386px;
     }
 }
 .container .header {
