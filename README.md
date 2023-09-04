@@ -14,3 +14,4 @@
 ## Visit my solutions to some of the [Frontend Mentor Jounir Challenges](https://www.frontendmentor.io/challenges) :
 1. [Testimonials Grid Section](https://pobze.github.io/Challenges/TestimonialsGridSection/index.html)
 2. [Flyo Landing Page](https://pobze.github.io/Challenges/FyloLandingPage/index.html)
+3. [Huddle Landing Page](https://pobze.github.io/Challenges/HuddleLandingPage/index.html)
