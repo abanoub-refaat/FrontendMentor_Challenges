@@ -19,7 +19,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    padding: calc(var(--mp) + 1em) var(--mp) var(--mp);
+    padding: calc(var(--mp) + 3em) var(--mp) var(--mp);
 }
 @media (max-width: 768px) {
     .header {
@@ -29,11 +29,11 @@
     }
 }
 .header .logo img{
-    max-width: 10em;
+    max-width: 11em;
 }
 .header .bt button {
     border: 1.5px solid var(--mc);
-    padding: 5px 12px;
+    padding: 8px 25px;
     color: var(--mc);
     text-transform: capitalize;
     border-radius: 25px;
@@ -74,6 +74,7 @@
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     color: var(--mtc);
+    font-size: 2.5em;
 }
 @media (max-width: 768px) {
     .container .f-section h1 {
@@ -94,12 +95,12 @@
 .container .f-section button {
     background-color: var(--mc);
     border: none;
-    border-radius: 25px;
-    padding: 15px 25px;
+    border-radius: 35px;
+    padding: 18px 65px;
     color: white;
     cursor: pointer;
     text-transform: capitalize;
-    margin-bottom: calc(3 * var(--mp));
+    margin-bottom: calc(4 * var(--mp));
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: .2s;
 }
@@ -107,7 +108,7 @@
     background-color: var(--omc);
 }
 .container .f-section img {
-    max-width: 768px;
+    max-width: 900px;
 }
 @media (max-width: 768px) {
     .container .f-section img {
@@ -121,6 +122,7 @@
     gap: 26em;
     padding: var(--mp);
     margin-top: calc(3 * var(--mp));
+    margin-bottom: var(--mp);
 }
 @media  (max-width: 768px) {
     .container .f-section .data {
@@ -219,7 +221,8 @@
 }
 .container .sec-section .sec-text h2 {
     max-width: 20em;
-    margin-bottom: var(--mp);
+    font-size: 2.4em;
+    margin-bottom: 0em;
     text-transform: capitalize;
 }
 .container .sec-section .sec-text p {
@@ -254,6 +257,8 @@
     max-width: 30em;
 }
 .container .thir-section .thir-text h2 {
+    font-size: 2.4em;
+    margin-bottom: 0em;
     text-transform: capitalize;
 }
 .container .thir-section .thir-text p {
@@ -306,7 +311,8 @@
 }
 .container .for-section .for-text h2 {
     max-width: 20em;
-    margin-bottom: var(--mp);
+    font-size: 2.4em;
+    margin-bottom: 0;
     text-transform: capitalize;
 }
 .container .for-section .for-text p {
@@ -322,6 +328,10 @@
     gap: 2em;
     text-transform: capitalize;
     color: var(--mtc);
+}
+.container .fi-section h2 {
+    font-size: 2.4em;
+    margin-bottom: 0em;
 }
 .container .fi-section button {
     background-color: var(--mc);
