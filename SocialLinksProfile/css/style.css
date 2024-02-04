@@ -39,7 +39,7 @@ body {
 }
 .content .profile .img {
   margin-top: 30px;
-  width: 25%;
+  width: 30%;
   border-radius: 50%;
   border: 2px solid hsl(0, 0%, 12%);
 }
