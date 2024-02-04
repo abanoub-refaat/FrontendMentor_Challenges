@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  display: grid;
+  height: 100vb;
+  place-content: center;
+  background-color: hsl(0, 0%, 8%);
+}
+.content {
+  width: 360px;
+  padding: 7%;
+  background-color: hsl(0, 0%, 12%);
+  text-align: center;
+  border-radius: 12px;
+}
+.profile h1 {
+  margin-bottom: 0;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: inherit;
+}
+.profile h2 {
+  margin-top: 5px;
+  margin-bottom: 1.5em;
+  color: #d6925b;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+}
+.profile p {
+  color: rgba(255, 255, 255, 0.822);
+  font-family: inherit;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.content .profile .img {
+  margin-top: 30px;
+  width: 25%;
+  border-radius: 50%;
+  border: 2px solid hsl(0, 0%, 12%);
+}
+.links {
+  display: flex;
+  flex-flow: column;
+}
+.links div {
+  margin: 6px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 20%);
+}
+.links .link {
+  color: white;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+.links div:hover {
+  background-color: #d6925b;
+  color: hsl(0, 0%, 0%);
+  cursor: pointer;
+  transition: 0.2;
+}
+.links div:hover .link {
+  color: hsl(0, 0%, 0%);
+  transition: 0.2;
+}
