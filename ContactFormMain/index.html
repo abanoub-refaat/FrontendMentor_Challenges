@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Contact form</title>
+    <!-- Attribution Styling -->
+    <style>
+      .attribution {
+        font-size: 12px;
+        text-align: center;
+        color: hsl(187, 24%, 22%);
+        margin-top: 15px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Contact Form -->
+      <h1>Contact Us</h1>
+      <form id="form">
+        <div class="form-control-name">
+          <!-- First Name -->
+          <div class="fname">
+            <label for="fname"
+              >First Name <span class="required">*</span></label
+            >
+            <input type="text" id="fname" />
+            <p class="fname-error error">This field is required</p>
+          </div>
+
+          <!-- Last Name -->
+          <div class="lname">
+            <label for="lname">Last Name <span class="required">*</span></label>
+            <input type="text" id="lname" />
+            <p class="lname-error error">This field is required</p>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-control">
+          <label for="email"
+            >Email Address <span class="required">*</span></label
+          >
+          <input type="email" id="email" />
+          <p class="email-error error">Please enter a valid email address</p>
+        </div>
+
+        <!-- Query Type -->
+        <div class="form-control-query">
+          <label for="query">Query Type <span class="required">*</span></label>
+          <div class="radio-options">
+            <div class="radio">
+              <input
+                type="radio"
+                id="General Enquiry"
+                value="General Enquiry"
+                name="query"
+              />
+              General Enquiry
+            </div>
+            <div class="radio">
+              <input
+                type="radio"
+                id="Support Request"
+                value="Support Request"
+                name="query"
+              />
+              Support Request
+            </div>
+          </div>
+          <p class="query-error error">Please select a query type</p>
+        </div>
+
+        <!-- Message -->
+        <div class="form-control">
+          <label for="message">Message <span class="required">*</span></label>
+          <textarea id="message"></textarea>
+          <p class="msg-error error">This field is required</p>
+        </div>
+
+        <div class="form-control-contract">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox"
+            >I consent to being contacted by the team
+            <span class="required">*</span></label
+          >
+          <p class="error contract-error">
+            To submit this form, please consent to being contacted Submit
+          </p>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Success Message -->
+    <div class="alert-mes">
+      <h3>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="21"
+          fill="none"
+          viewBox="0 0 20 21"
+        >
+          <path
+            fill="#fff"
+            d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z"
+          />
+        </svg>
+        Message Sent!
+      </h3>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+    <!-- Attribution -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj"
+        >Frontend Mentor</a
+      >, Coded by
+      <a href="https://github.com/abanoub-refaat">Abanoub Refaat</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
